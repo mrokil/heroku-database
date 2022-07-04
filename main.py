@@ -1,5 +1,4 @@
 import os
-from mysqlx import SSLMode
 import telebot
 import logging
 import psycopg2
