@@ -37,7 +37,7 @@ def start(message):
 
 @bot.message_handler(commands=["stats"])
 def get_stats(message):
-    db_object.execute("SELECT + FROM users ORDER BY  messages DESC LIMIT 10")
+    db_object.execute("SELECT * FROM users ORDER BY messages DESC LIMIT 10")
     result = db_object.fetchall()
 
     if not result:
